@@ -5,6 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'rails', '~> 5.2.3'
 
 gem 'bootstrap-sass'
+gem 'jquery-rails'
 gem 'bcrypt'
 # Use sqlite3 as the database for Active Record
 # Use Puma as the app server
