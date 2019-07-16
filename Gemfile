@@ -8,6 +8,8 @@ gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'bcrypt'
 gem  'faker'
+gem 'carrierwave'
+gem  'mini_magick' 
 gem 'kaminari'
 gem 'bootstrap-kaminari-views'
 # Use sqlite3 as the database for Active Record
@@ -61,6 +63,7 @@ end
 
 group :production do
   gem 'pg'
+gem 'fog'
 end
 
 
