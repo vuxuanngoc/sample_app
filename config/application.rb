@@ -17,7 +17,7 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module TestXxx
+module SampleApp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
@@ -30,5 +30,6 @@ module TestXxx
     # Don't generate system test files.
     config.generators.system_tests = nil
     config.assets.initialize_on_precompile = false
+    config.action_view.embed_authenticity_token_in_remote_forms = true
   end
 end
